@@ -141,6 +141,39 @@
 #tfabDropZone span{font-size:11px}
 #tfabDropZone.dragover{border-color:#18865c;background:#e4faef;box-shadow:inset 0 0 0 2px #80cda5}
 #tfabDropMessage:empty{display:none}
+
+
+/* V2.4 : barre outils stable et indicateur minimal, aucun changement de hauteur au fil des frappes */
+.topbar{gap:14px;padding:12px 18px;align-items:center;min-height:76px}
+.top-title{min-width:155px;flex:1 1 205px;max-width:350px}
+.top-title strong{font-size:14px;line-height:1.3}
+.top-title small{font-size:10px}
+.actions.tfab-toolbar{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex:3 1 670px;flex-wrap:wrap}
+.tfab-toolgroup{display:flex;align-items:center;gap:5px;padding:4px 6px;border-radius:10px;border:1px solid #dce7f1;background:#f4f8fc;min-height:40px}
+.tfab-toolgroup .btn{white-space:nowrap;padding:7px 9px;font-size:11px;border-radius:7px}
+.tfab-toolgroup.tfab-session{background:#fff;border-color:#e4e9f0}
+.statusline{display:inline-flex;gap:6px;align-items:center;justify-content:center;width:38px;min-width:38px;max-width:38px;height:29px;padding:0;background:#e9f6f0;border:1px solid #bee7d1;border-radius:8px;flex:none;transition:background .15s,border-color .15s}
+.statusline[data-state="busy"]{background:#e7f2ff;border-color:#a8cff7}
+.statusline[data-state="error"]{background:#ffeded;border-color:#efb1b1}
+.statusline .statusdot{display:block;width:11px;height:11px;flex:none;background:#17a56e;border-radius:50%;box-shadow:0 0 0 3px #24b17a1c;transition:background .15s}
+.statusline[data-state="busy"] .statusdot{background:#248be0;box-shadow:0 0 0 3px #248be024;animation:tfabSavePulse 1.1s ease-in-out infinite}
+.statusline[data-state="error"] .statusdot{background:#de3d45;box-shadow:0 0 0 3px #e04d5422}
+@keyframes tfabSavePulse{50%{opacity:.45}}
+.tfab-screenreader,.tfab-statuscaption{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+.tfab-tools-menu{position:relative}
+.tfab-tools-menu>summary{display:block;list-style:none;cursor:pointer;user-select:none;min-width:52px;text-align:center}
+.tfab-tools-menu>summary::-webkit-details-marker{display:none}
+.tfab-tools-panel{position:absolute;top:calc(100% + 9px);right:0;z-index:25;background:#fff;padding:9px;min-width:190px;display:grid;gap:6px;box-shadow:0 12px 35px #102a4550;border:1px solid #cbd9e8;border-radius:11px}
+.tfab-tools-panel .btn{text-align:left}
+.tfab-workspace-banner{padding:6px 18px;grid-template-columns:27px minmax(140px,1fr) auto;gap:9px;min-height:42px;box-shadow:none;border-bottom:1px solid #d8e7f4}
+.tfab-banner-icon{height:27px;width:27px;font-size:15px;border-radius:7px}
+.tfab-banner-copy{gap:1px}.tfab-banner-copy strong{font-size:10px}.tfab-banner-copy span{font-size:10px;max-width:500px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tfab-link-pill{min-width:109px;text-align:center;white-space:nowrap;padding:5px 8px;font-size:10px}
+#tfabLocalState{display:none}
+#tfabDropZone.tfab-hidden-when-linked{display:none!important}
+@media(max-width:1100px){.topbar{align-items:flex-start}.actions.tfab-toolbar{justify-content:flex-start}.tfab-workspace-banner{grid-template-columns:27px 1fr auto}.tfab-link-pill{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.statusline[data-state="busy"] .statusdot{animation:none}}
+@media print{.tfab-tools-menu,.statusline{display:none!important}}
 </style>
 </head>
 <body>
@@ -171,13 +204,28 @@
 </div>
 <div class="app">
  <aside class="sidebar">
-  <div class="brand"><strong>TFAB <span style="color:#6eb0ff">/ EXAMENS</span></strong><div>CAP MAINTENANCE DES VÉHICULES • V2.3</div></div>
+  <div class="brand"><strong>TFAB <span style="color:#6eb0ff">/ EXAMENS</span></strong><div>CAP MAINTENANCE DES VÉHICULES • V2.4</div></div>
   <div class="nav-caption">CONCEPTION DU SUJET</div>
   <nav class="nav" id="nav"></nav>
   <div class="sidebar-bottom">◉ Fonctionne hors connexion<br>◉ Sauvegarde locale IndexedDB<br>◉ JSON lié + sauvegarde automatique<br>◉ Export / import JSON<br><span style="color:#b4c8e2">Les données ne sont pas envoyées à un serveur. Conservez aussi des sauvegardes JSON.</span></div>
  </aside>
  <div class="main">
-  <header class="topbar"><div class="top-title"><strong id="subjectTitle">Éditeur de sujets d'examen</strong><small id="subjectSub">CAP MV • Épreuve EP2</small></div><div class="actions"><span class="statusline"><span class="statusdot" id="saveDot"></span><span id="saveStatus">Sauvegardé localement</span></span><button class="btn" id="linkOpenBtn" title="Ouvrir un sujet et le lier à son fichier JSON">📂 Ouvrir JSON existant</button><button class="btn" id="linkSaveBtn" title="Créer ou lier un fichier JSON pour les sauvegardes automatiques">＋ Créer JSON</button><button class="btn" id="forceSaveBtn" title="Enregistrer dans le JSON lié">💾 Sauver maintenant</button><button class="btn" id="importBtn">Importer (sans liaison)</button><button class="btn" id="exportBtn">Exporter une copie</button><button class="btn primary" id="printBtn">Exporter PDF / Imprimer</button><button class="btn" id="tfabSettingsBtn" type="button">⚙ Paramètres</button><button class="btn" id="tfabQuitBtn" type="button" title="Sauvegarder et verrouiller l’éditeur">⏻ Quitter</button></div></header>
+  <header class="topbar"><div class="top-title"><strong id="subjectTitle">Éditeur de sujets d'examen</strong><small id="subjectSub">CAP MV • Épreuve EP2</small></div><div class="actions tfab-toolbar">
+  <div class="tfab-toolgroup tfab-files" aria-label="Fichier de travail">
+   <span class="statusline" id="saveIndicator" role="status" aria-live="off" title="État des sauvegardes"><span class="statusdot" id="saveDot"></span><span class="tfab-statuscaption">Enregistrement</span><span id="saveStatus" class="tfab-screenreader">Sauvegardé localement</span></span>
+   <button class="btn" id="linkOpenBtn" title="Ouvrir et lier un fichier JSON">📂 Ouvrir JSON</button>
+   <button class="btn" id="linkSaveBtn" title="Créer un nouveau fichier JSON lié">＋ Nouveau JSON</button>
+   <button class="btn" id="forceSaveBtn" title="Forcer l'écriture du JSON lié">💾 Enregistrer</button>
+  </div>
+  <div class="tfab-toolgroup tfab-exports" aria-label="Documents et sauvegardes">
+   <button class="btn primary" id="printBtn" title="Prévisualiser et exporter les documents">📄 Documents / PDF</button>
+   <details class="tfab-tools-menu"><summary class="btn" title="Import et export de secours">⋯ Plus</summary><div class="tfab-tools-panel"><button class="btn" id="importBtn">Importer sans liaison</button><button class="btn" id="exportBtn">Exporter une copie JSON</button></div></details>
+  </div>
+  <div class="tfab-toolgroup tfab-session" aria-label="Session">
+   <button class="btn" id="tfabSettingsBtn" type="button">⚙ Paramètres</button>
+   <button class="btn" id="tfabQuitBtn" type="button" title="Sauvegarder et verrouiller l’éditeur">⏻ Quitter</button>
+  </div>
+ </div></header>
   <div class="tfab-workspace-banner" role="region" aria-label="Fichier du sujet et sauvegarde">
   <div class="tfab-banner-icon">📁</div><div class="tfab-banner-copy"><strong>Fichier de travail JSON</strong><span id="tfabLinkHelp">Sélectionnez votre JSON : il deviendra le fichier de travail, avec sauvegarde automatique.</span></div>
   <div class="tfab-link-pill" id="tfabLinkPill">● Aucun JSON lié</div>
@@ -275,23 +323,33 @@ let linkedHandle=null,linkedName='',linkedSavedRevision=-1,linkedQueue=Promise.r
 const showDropInfo=(message,error=false)=>{const el=$('tfabDropMessage');if(el){el.textContent=message;el.style.color=error?'#a32222':'#087d48'}};
 const canLink=()=>typeof window.showSaveFilePicker==='function'&&typeof window.showOpenFilePicker==='function';
 const total=()=>data.criteria.reduce((n,c)=>n+(Number(c.points)||0),0),target=()=>data.meta.ep==='EP1'?160:80;
-const saveIndicator=(message,warning=false)=>{const status=$('saveStatus'),dot=$('saveDot');
- const value=linkedHandle?(linkedStatus||('JSON lié : '+linkedName)):message;
- if(status){status.textContent=value;status.title=linkedHandle?linkedName:''}
- if(dot)dot.classList.toggle('warn',linkedHandle?linkedError:warning);
+const saveIndicator=(message,warning=false)=>{
+ const status=$('saveStatus');if(status)status.textContent=linkedHandle?(linkedStatus||'JSON lié'):message;
+ const busy=/en cours|écriture|attente|lecture|sélection|chargement|création/i.test(message||'');
+ tfabUpdateVisualState(warning&&!busy?'error':busy?'busy':'ok');
  if(typeof refreshLinkBannerSoon==='function')refreshLinkBannerSoon();
 };
-const setLinkedStatus=(message,warning=false)=>{linkedStatus=message;linkedError=warning;saveIndicator(message,warning)};
+const setLinkedStatus=(message,warning=false)=>{linkedStatus=message;linkedError=warning&&!/en cours|attente|écriture|sélection|lecture|création/i.test(message||'');saveIndicator(message,linkedError)};
 
+const tfabUpdateVisualState=(mode)=>{
+ const box=$('saveIndicator'),dot=$('saveDot');if(!box||!dot)return;
+ const state=mode==='error'?'error':mode==='busy'?'busy':'ok';
+ box.dataset.state=state;dot.classList.toggle('warn',state==='error');
+ const description=state==='error'?'Erreur de sauvegarde':state==='busy'?'Enregistrement en cours':'Enregistrement terminé';
+ box.title=description+(linkedHandle?' · '+linkedName:' · IndexedDB')+(linkedStatus?' · '+linkedStatus:'');
+ box.setAttribute('aria-label',box.title);
+};
 const refreshLinkBanner=()=>{
  const pill=$('tfabLinkPill'),help=$('tfabLinkHelp'),local=$('tfabLocalState');
  if(!pill)return;
  const active=Boolean(linkedHandle),okay=active&&!linkedError&&linkedSavedRevision===revision;
  pill.className='tfab-link-pill'+(active?(linkedError?' bad':okay?' ok':' busy'):'');
- pill.textContent=!active?'● Aucun JSON lié':(linkedError?'⚠ '+linkedStatus:okay?'✓ JSON sauvegardé':'● '+(linkedStatus||'JSON lié'));
- pill.title=active?linkedName:'';
- if(help)help.textContent=active?'Fichier lié : '+linkedName+' · Vérifiez le statut vert après chaque modification.':'Décompressez le ZIP, puis choisissez le fichier .json extrait avec « Ouvrir JSON existant ». Après liaison, autorisez une première sauvegarde.';
- if(local)local.textContent='Sauvegarde de secours : IndexedDB (distincte du fichier JSON lié)';
+ pill.textContent=!active?'Aucun JSON lié':(linkedError?'Erreur JSON':okay?'JSON enregistré':'JSON lié');
+ pill.title=active?linkedName+' · '+linkedStatus:'Aucun JSON de travail lié';
+ const banner=document.querySelector('.tfab-workspace-banner');if(banner)banner.classList.toggle('tfab-has-link',active);
+ const drop=$('tfabDropZone');if(drop)drop.classList.toggle('tfab-hidden-when-linked',active);
+ if(help){help.textContent=active?linkedName:'Ouvrir ou déposer un fichier JSON pour commencer';help.title=linkedName||''}
+ if(local)local.textContent=active?'Copie locale de secours active':'Sauvegarde locale (IndexedDB)';
 };
 const refreshLinkBannerSoon=()=>queueMicrotask(refreshLinkBanner);
 
@@ -336,7 +394,7 @@ function writeLinkedJSON(requestPermission=false,force=false){
   if(!handle||handle!==linkedHandle||epoch!==linkEpoch)return false;
   if(!force&&linkedSavedRevision>=atRevision)return true;
   const allowed=await ensureLinkedPermission(requestPermission);
-  if(!allowed){setLinkedStatus('JSON lié · autorisation à rétablir : Sauver maintenant',true);return false}
+  if(!allowed){setLinkedStatus('Autorisation écriture requise : cliquer sur Enregistrer',true);return false}
   if(handle!==linkedHandle||epoch!==linkEpoch)return false;
   setLinkedStatus('Écriture du JSON lié…');
   try{
@@ -346,7 +404,7 @@ function writeLinkedJSON(requestPermission=false,force=false){
    if(handle===linkedHandle&&epoch===linkEpoch){
     refreshLinkBannerSoon();
     if(revision===atRevision)setLinkedStatus('JSON lié · sauvegardé : '+linkedName);
-    else setLinkedStatus('Modifications en attente · JSON lié',true);
+    else setLinkedStatus('Modifications en attente · JSON lié');
    }
    return true;
   }catch(error){setLinkedStatus('Échec écriture JSON lié : '+(error?.message||'erreur'),true);console.warn('Sauvegarde fichier lié',error);return false}
@@ -488,7 +546,7 @@ const save=()=>{
  });
  return saveChain;
 };
-const dirty=()=>{revision++;refreshLinkBannerSoon();if(linkedHandle)setLinkedStatus('Modifications en attente · JSON lié',true);else saveIndicator('Sauvegarde en cours…',true);
+const dirty=()=>{revision++;refreshLinkBannerSoon();if(linkedHandle)setLinkedStatus('Modifications en attente · JSON lié');else saveIndicator('Sauvegarde en cours…',true);
  clearTimeout(saveTimer);saveTimer=setTimeout(()=>{save();if(linkedHandle)writeLinkedJSON(false)},850)
 };
 async function initStorage(){
