@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TFAB • Éditeur de sujets d’examen CAP MV — V2.8.1 · Catalogue et Mes sujets</title>
+<title>TFAB • Éditeur de sujets d’examen CAP MV — V2.8.2 · Catalogue et Mes sujets</title>
 <style>
 :root{--ink:#19253a;--navy:#14213a;--navy2:#1f3352;--accent:#2671da;--accent2:#e6f0ff;--gray:#66768a;--line:#dce3ec;--back:#f3f6fa;--white:#fff;--green:#117e57;--red:#b83d4a;--warn:#a56c12;--radius:13px}
 *{box-sizing:border-box}html,body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--back)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.app{display:grid;grid-template-columns:235px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--navy);color:#dbe7f9;min-height:100vh;position:sticky;top:0;height:100vh;padding:23px 14px;display:flex;flex-direction:column}.brand{padding:0 12px 25px}.brand strong{font-size:24px;letter-spacing:-.7px;color:#fff}.brand div{font-size:11px;letter-spacing:.04em;color:#9bb2d0;margin-top:5px}.nav-caption{padding:8px 12px;color:#8aa1bf;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.nav{display:flex;flex-direction:column;gap:4px}.nav button{width:100%;border:0;border-radius:10px;text-align:left;padding:12px;background:transparent;color:#cad8eb;font-weight:650;display:flex;align-items:center;gap:10px;font-size:13px}.nav button.active,.nav button:hover{background:#2b4365;color:#fff}.nav button span{font-size:16px}.sidebar-bottom{margin-top:auto;padding:12px;font-size:11px;line-height:1.65;color:#92a7c5;border-top:1px solid #334762}.main{min-width:0}.topbar{padding:18px 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;position:sticky;top:0;z-index:8}.top-title strong{display:block;font-size:17px}.top-title small{color:var(--gray);font-size:12px}.actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.btn{border:1px solid #cbd7e4;border-radius:9px;padding:9px 12px;font-size:12px;background:#fff;font-weight:750;color:#263951}.btn:hover{background:#eff5fb}.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.btn.primary:hover{background:#1259bd}.btn.ghost{background:transparent}.btn.danger{color:var(--red);border-color:#edcbd1}.btn.small{padding:7px 9px;font-size:11px}.content{padding:27px 30px 65px;max-width:1600px;margin:auto}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin-bottom:22px}.section-heading h1{font-size:24px;letter-spacing:-.6px;margin:0 0 6px}.section-heading p{margin:0;font-size:13px;color:var(--gray);line-height:1.55}.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 3px 12px #1f2f4408;margin-bottom:18px}.panel h2{font-size:15px;margin:0 0 18px}.panel h3{font-size:13px;margin:18px 0 10px}.form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.form-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.field{min-width:0;display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;font-weight:750;color:#394a63}.field input,.field select,.field textarea{width:100%;padding:10px 11px;border:1px solid #ccd6e3;background:#fff;border-radius:8px;font-size:13px;color:#19283f}.field textarea{min-height:80px;resize:vertical;line-height:1.55}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid #a4c6fa;border-color:#458de8}.muted{color:var(--gray);font-size:12px;line-height:1.55}.hint{font-size:11px;color:var(--gray)}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:13px}.toolbar h2{margin:0}.chip{font-size:11px;background:#e8f1ff;color:#1859ae;padding:6px 10px;border-radius:50px;font-weight:750}.chip.green{background:#e6f6ee;color:#0d7547}.chip.amber{background:#fff3db;color:#9a630b}.split{display:grid;grid-template-columns:270px minmax(290px,1fr);gap:15px;align-items:start}.split.has-detail{grid-template-columns:240px minmax(280px,1.1fr) minmax(280px,1fr)}.item-list{display:flex;flex-direction:column;gap:7px}.item{border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px;text-align:left;width:100%;font-size:12px;color:#273954;line-height:1.4}.item b{display:block;margin-bottom:3px;font-size:12px}.item small{font-size:11px;color:var(--gray)}.item.active{border-color:#4084da;background:#ecf4ff}.blockline{display:flex;align-items:center;gap:7px;padding:10px;border:1px solid var(--line);border-radius:9px;background:#fff;margin:7px 0}.blockline.selected{border-color:#3f84de;background:#f1f7ff}.blockline .summary{flex:1;min-width:0;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:12px}.blockline .kind{font-size:10px;background:#eef1f6;border-radius:4px;padding:3px 5px;color:#52657b}.inline-actions{display:flex;gap:5px;flex-wrap:wrap}.mini{padding:5px 7px;border:1px solid #d4e0eb;background:#fff;border-radius:6px;font-size:11px;color:#4b5c70}.mini:hover{background:#eaf2fe}.mini.red{color:var(--red)}.block-actions{display:flex;gap:6px;align-items:center;margin-bottom:12px}.empty{padding:27px 12px;text-align:center;color:#79899f;border:1px dashed #c7d3e1;border-radius:9px;font-size:12px}.subtle{background:#f7f9fc;border-radius:9px;padding:11px 13px}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.edit-card{border:1px solid var(--line);border-radius:10px;padding:13px;background:#fff;margin-bottom:10px}.edit-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}.edit-head strong{font-size:13px}.addline{display:flex;gap:7px;flex-wrap:wrap}.addline select{flex:1;min-width:140px;border:1px solid var(--line);border-radius:7px;padding:9px;font-size:12px}.statusline{display:flex;gap:9px;align-items:center;font-size:11px;color:var(--gray)}.statusdot{height:7px;width:7px;background:#23aa76;border-radius:50%;display:inline-block}.statusdot.warn{background:#efaf39}.audit{display:flex;gap:9px;align-items:flex-start;border:1px solid #d6e4d9;background:#f4fbf7;border-radius:9px;padding:12px;margin-bottom:8px;font-size:12px;line-height:1.5}.audit.warn{border-color:#f2ddb8;background:#fffbf3}.audit.error{border-color:#eccfd1;background:#fff7f7}.audit .mark{font-weight:900;font-size:14px}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.stat{background:#fff;border:1px solid var(--line);border-radius:11px;padding:14px}.stat b{display:block;font-size:22px}.stat small{font-size:11px;color:var(--gray)}.preview-paper{background:#fff;max-width:790px;margin:0 auto;padding:45px 42px;border:1px solid #c5cbd3;box-shadow:0 7px 23px #16253a12;min-height:700px;font-family:Arial,sans-serif;font-size:12px}.preview-paper h1{font-size:22px;text-align:center}.preview-paper h2{font-size:16px;text-align:center}.preview-paper h3{font-size:13px}.paper-head{text-align:center;border-bottom:2px solid #222;padding-bottom:10px;margin-bottom:25px}.paper-foot{border-top:1px solid #555;margin-top:28px;padding-top:6px;text-align:center;font-size:9px}.preview-paper p{line-height:1.5}.preview-paper table{border-collapse:collapse;width:100%}.preview-paper td,.preview-paper th{border:1px solid #555;padding:6px;text-align:left;vertical-align:top}.preview-paper th{background:#eee}.answerlines{line-height:28px;white-space:normal;letter-spacing:1px;color:#969696;overflow:hidden}.print-sheet{font-family:Arial,Helvetica,sans-serif;color:#111;font-size:11pt;padding:5mm 2mm}.print-sheet h1{text-align:center;font-size:20pt}.print-sheet h2{text-align:center;font-size:15pt}.print-sheet h3{font-size:12pt;background:#ddd;padding:6px;text-align:center;border:1px solid #555}.print-sheet h4{font-size:11pt}.print-sheet p,.print-sheet li{line-height:1.38}.print-sheet table{width:100%;border-collapse:collapse;margin:10px 0}.print-sheet th,.print-sheet td{border:1px solid #333;padding:6px;vertical-align:top;text-align:left}.print-sheet th{background:#ddd}.print-sheet img{max-width:100%;max-height:220mm;object-fit:contain}.print-sheet .paper-footer{border:1px solid #666;text-align:center;padding:6px;font-size:9pt;margin-top:18px}.print-sheet .answer-row{height:23px;border-bottom:1px dotted #777}.print-sheet .pagebreak{break-before:page;page-break-before:always}.print-sheet .nobreak{break-inside:avoid;page-break-inside:avoid}.print-sheet .cover{min-height:240mm;text-align:center;display:flex;flex-direction:column;justify-content:flex-start;gap:20px;padding-top:15mm}.print-sheet .cover .identity{text-align:left;font-size:11pt}.print-sheet .cover h1{margin-top:40px}.print-sheet .cover h2{font-size:18pt}.print-sheet .cover img{max-height:95mm;max-width:150mm;margin:10px auto}.print-sheet .cover .paper-footer{margin-top:auto}.print-sheet .section-label{font-weight:bold;background:#ddd;border:1px solid #555;padding:7px;text-align:center;margin:18px 0 10px}.print-sheet .q{margin:13px 0;break-inside:avoid}.print-sheet .tasklist{margin:4px 0 13px}.print-sheet .measure{font-size:9.5pt}.print-sheet .tight{font-size:9pt}.print-sheet .grading th,.print-sheet .grading td{font-size:9pt}.print-sheet .grading td:nth-last-child(1){white-space:nowrap}.print-sheet .big-note{font-size:16pt;font-weight:700;text-align:right}.print-sheet .twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.print-sheet .ord{font-size:9pt}.print-sheet .badge-doc{margin-bottom:14px;font-size:16pt;font-weight:700;text-align:center}.print-sheet .quiet{color:#555}.previewprint{min-height:300px;background:#e9edf2;border:1px dashed #a4b3c5;border-radius:8px;padding:20px}.footer{font-size:11px;color:#8391a3;margin-top:25px}.hidden{display:none!important}#printRoot{display:none}
@@ -42,7 +42,7 @@
 .print-sheet .ord .or-check{color:#1544aa;text-align:center;font-weight:bold}
 .print-sheet .ord .or-legend td{padding:6px 7px}
 @media print{
- @page{size:A4 portrait;margin:12mm 12mm 23mm}
+ @page{size:A4 portrait;margin:12mm 12mm 8mm}
  #printRoot>.print-sheet{height:258mm;min-height:258mm;display:flex;flex-direction:column;padding:0!important;margin:0;break-after:page;page-break-after:always}
  #printRoot>.print-sheet>.paper-footer{margin-top:auto!important;display:block!important}
  #printRoot .print-sheet h2{margin:9px 0 9px}
@@ -143,7 +143,7 @@
 #tfabDropMessage:empty{display:none}
 
 
-/* V2.8.1 : barre outils stable et indicateur minimal, aucun changement de hauteur au fil des frappes */
+/* V2.8.2 : barre outils stable et indicateur minimal, aucun changement de hauteur au fil des frappes */
 .topbar{gap:14px;padding:12px 18px;align-items:center;min-height:76px}
 .top-title{min-width:155px;flex:1 1 205px;max-width:350px}
 .top-title strong{font-size:14px;line-height:1.3}
@@ -175,7 +175,7 @@
 @media(prefers-reduced-motion:reduce){.statusline[data-state="busy"] .statusdot{animation:none}}
 @media print{.tfab-tools-menu,.statusline{display:none!important}}
 
-/* V2.8.1 espace de travail */
+/* V2.8.2 espace de travail */
 .tfab-workspace-help{background:#eaf4ff;border-left:4px solid #2681df;padding:15px 18px;border-radius:10px;color:#23446d;margin:16px 0 20px;line-height:1.55;font-size:13px}
 .tfab-mygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:14px;align-items:stretch;margin:16px 0 22px}
 .tfab-mycard{background:white;border:1px solid #dce6f2;border-radius:13px;padding:17px;display:flex;flex-direction:column;gap:8px;box-shadow:0 3px 12px rgba(23,57,97,.05);min-height:205px}
@@ -235,6 +235,27 @@
 .teacher-print-header{font:9pt Arial;color:#222;text-align:center;min-height:7mm;flex-shrink:0;margin:0 0 1mm}
 
 .print-sheet .source-table td,.print-sheet .measure td{vertical-align:middle;overflow-wrap:anywhere;word-break:normal}.print-sheet .grid-cell-image{max-width:100%;object-fit:contain;height:auto}
+
+.tfab-measure-stage{position:absolute;left:-12000px;top:0;visibility:hidden;width:186mm;pointer-events:none}
+.print-sheet.tfab-physical{box-sizing:border-box!important;width:186mm!important;height:276mm!important;min-height:276mm!important;max-height:276mm!important;margin:0!important;padding:0!important;display:flex!important;flex-direction:column!important;gap:0!important;overflow:visible!important}
+.tfab-physical>.teacher-print-header{box-sizing:border-box;flex:0 0 7mm!important;height:7mm!important;margin:0!important;padding:0!important}
+.tfab-physical>.tfab-page-body{flex:1 1 0!important;min-height:0!important;display:flow-root;overflow:visible!important;width:100%}
+.tfab-physical>.paper-footer{flex:0 0 auto!important;margin:2mm 0 0!important;padding:0!important;position:static!important;display:block!important}
+.tfab-print-group{display:flow-root;break-inside:avoid;page-break-inside:avoid}
+.tfab-physical .cover{min-height:0!important}
+.tfab-physical p,.tfab-physical li{line-height:1.26}
+.tfab-physical h2{margin:9px 0}
+.tfab-physical h4{margin:9px 0 5px}
+.tfab-physical ul{margin:7px 0}
+.tfab-physical .tasklist{margin:3px 0 7px}
+.tfab-physical .cover{gap:10px!important;padding-top:5mm!important}
+@media print{
+ @page{size:A4 portrait;margin:12mm 12mm 8mm}
+ #printRoot>.print-sheet.tfab-physical{height:276mm!important;min-height:276mm!important;max-height:276mm!important;break-before:auto!important;page-break-before:auto!important;break-inside:avoid!important;page-break-inside:avoid!important;break-after:page!important;page-break-after:always!important}
+ #printRoot>.print-sheet.tfab-physical:last-child{break-after:auto!important;page-break-after:auto!important}
+ #printRoot>.tfab-physical>.tfab-page-body{flex:1 1 0!important}
+ #printRoot>.tfab-physical>.paper-footer{margin:2mm 0 0!important}
+}
 </style>
 </head>
 <body>
@@ -265,7 +286,7 @@
 </div>
 <div class="app">
  <aside class="sidebar">
-  <div class="brand"><strong>TFAB <span style="color:#6eb0ff">/ EXAMENS</span></strong><div>CAP MAINTENANCE DES VÉHICULES • V2.8.1</div></div>
+  <div class="brand"><strong>TFAB <span style="color:#6eb0ff">/ EXAMENS</span></strong><div>CAP MAINTENANCE DES VÉHICULES • V2.8.2</div></div>
   <div class="nav-caption">ESPACE DE TRAVAIL</div>
   <nav class="nav" id="nav"></nav>
   <div class="sidebar-bottom">◉ Fonctionne hors connexion<br>◉ Sauvegarde locale IndexedDB<br>◉ Sauvegarde globale automatique<br>◉ Import / export dans Paramètres<br><span style="color:#b4c8e2">Les données ne sont pas envoyées à un serveur. Conservez aussi des sauvegardes JSON.</span></div>
@@ -381,7 +402,7 @@ let libSearch='',libEp='all',libFocus=null;
 let tab='mes_sujets',docId=data.docs[0]?.id,blockId=null,editMode=true,saveTimer=null,photoTarget=null;
 let storageDB=null,storageReady=false,revision=0,saveChain=Promise.resolve();
 let linkedHandle=null,linkedName='',linkedSavedRevision=-1,linkedQueue=Promise.resolve(),linkEpoch=0,linkedStatus='',linkedError=false;
-// V2.8.1 - Registre des sujets personnels (indépendant du catalogue historique et du JSON lié)
+// V2.8.2 - Registre des sujets personnels (indépendant du catalogue historique et du JSON lié)
 let workspaceDB=null,workspaceList=[],workspaceBusy=false;
 const workspaceId=()=> 'cap-'+(crypto?.randomUUID?.()|| (Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)));
 const ensureWorkspaceId=subject=>{if(subject&&!subject._tfabWorkspaceId)subject._tfabWorkspaceId=workspaceId();return subject};
@@ -390,8 +411,15 @@ const workspacePut=(copy)=>new Promise((resolve,reject)=>{if(!workspaceDB){resol
 const workspaceReadAll=()=>new Promise((resolve,reject)=>{if(!workspaceDB){resolve([]);return}let rq=workspaceDB.transaction('mes_sujets','readonly').objectStore('mes_sujets').getAll();rq.onsuccess=()=>resolve(rq.result||[]);rq.onerror=()=>reject(rq.error)});
 async function workspaceRefresh(){try{workspaceList=(await workspaceReadAll()).sort((a,b)=>b.updated.localeCompare(a.updated));if(tab==='mes_sujets')render()}catch(e){console.warn('Liste des sujets indisponible',e)}}
 async function workspaceSaveSnapshot(copy){if(!workspaceDB)return;await workspacePut(copy);const index=workspaceList.findIndex(x=>x.id===copy._tfabWorkspaceId);const item={id:copy._tfabWorkspaceId,title:copy.meta?.titre||'Sans titre',ep:copy.meta?.ep||'EP2',numero:copy.meta?.numero||'',session:copy.meta?.session||'',updated:new Date().toISOString(),data:copy};if(index>=0)workspaceList[index]=item;else workspaceList.unshift(item);workspaceList.sort((a,b)=>b.updated.localeCompare(a.updated));if(tab==='mes_sujets')render();}
-function mesSujetsView(){const selected=data?._tfabWorkspaceId;return `<div class="section-heading"><div><h1>Mes sujets CAP</h1><p>Retrouve tes créations ici, sans charger le catalogue ni chercher un JSON à chaque fois.</p></div><div class="actions"><button class="btn primary" data-action="myNew" data-ep="EP1">＋ Nouveau EP1</button><button class="btn primary" data-action="myNew" data-ep="EP2">＋ Nouveau EP2</button></div></div><div class="tfab-workspace-help"><strong>Deux espaces distincts :</strong> <b>Catalogue historique</b> = anciens dossiers pour s'inspirer. <b>Mes sujets</b> = tes créations et leurs brouillons. Tous les sujets sont enregistrés automatiquement dans le dossier choisi et dans une copie locale de secours.</div><div class="field"><label>Filtrer par collègue</label><select id="ownerFilter"><option value="">Tous</option>${colleagues.map(c=>`<option ${c===ownerFilter?'selected':''} value="${attr(c)}">${h(c)}</option>`).join('')}</select></div><div class="tfab-mygrid">${workspaceList.length?workspaceList.filter(x=>!ownerFilter||x.data.meta.responsable===ownerFilter).map(x=>`<div class="tfab-mycard ${x.id===selected?'active':''}"><div class="tfab-mycard-head"><span class="tfab-ep">${h(x.ep)}</span>${x.id===selected?'<span class="tfab-current">Sujet ouvert</span>':''}</div><h3>${h(x.title)}</h3><p><strong>${h(x.data.meta.responsable||'Non affecté')}</strong></p><p>Session ${h(x.session)} · Sujet n°${h(x.numero)}</p><small>Enregistré : ${h(new Date(x.updated).toLocaleString('fr-FR'))}</small><button class="btn ${x.id===selected?'':'primary'}" data-action="myOpen" data-myid="${attr(x.id)}">${x.id===selected?'Continuer ce sujet':'Ouvrir ce sujet'}</button></div>`).join(''):'<div class="panel">Aucun sujet enregistré ici. Choisis « Nouveau EP1 » ou « Nouveau EP2 » pour commencer.</div>'}</div><div class="panel tfab-archive-link"><h2>Besoin d’un ancien sujet ?</h2><p>Le catalogue des anciens dossiers 2014–2026 est déjà intégré au logiciel et reste accessible sans aucune liaison JSON.</p><button class="btn" data-action="myArchive">Consulter le catalogue historique</button></div>`}
-async function myAction(name,el){if(name==='myArchive'){tab='bibliotheque';render();return}if(name==='myNew'){if(!confirm('Créer un nouveau sujet ? Le sujet actuel sera conservé dans « Mes sujets ».'))return;try{await save();if(linkedHandle)await writeLinkedJSON(false,true)}catch(e){console.warn(e)}unlinkJSON();data=ensureWorkspaceId(defaults(el.dataset.ep||'EP2'));docId=data.docs[0]?.id;blockId=null;tab='general';revision++;history=[];future=[];lastSnapshot=JSON.stringify(data);updateHistory();await save();render();return}if(name==='myOpen'){const candidate=workspaceList.find(x=>x.id===el.dataset.myid);if(!candidate)return;if(candidate.id===data._tfabWorkspaceId){tab='general';render();return}try{await save();if(linkedHandle)await writeLinkedJSON(false,true)}catch(e){console.warn('Ancien sujet conservé localement, vérifiez JSON lié',e)}unlinkJSON();data=validateSubject(JSON.parse(JSON.stringify(candidate.data)));ensureWorkspaceId(data);docId=data.docs[0]?.id;blockId=null;tab='general';revision++;await save();render();lastSnapshot=JSON.stringify(data);history=[];future=[];updateHistory();}}
+function mesSujetsView(){const selected=data?._tfabWorkspaceId;return `<div class="section-heading"><div><h1>Mes sujets CAP</h1><p>Retrouve tes créations ici, sans charger le catalogue ni chercher un JSON à chaque fois.</p></div><div class="actions"><button class="btn primary" data-action="myNew" data-ep="EP1">＋ Nouveau EP1</button><button class="btn primary" data-action="myNew" data-ep="EP2">＋ Nouveau EP2</button></div></div><div class="tfab-workspace-help"><strong>Deux espaces distincts :</strong> <b>Catalogue historique</b> = anciens dossiers pour s'inspirer. <b>Mes sujets</b> = tes créations et leurs brouillons. Tous les sujets sont enregistrés automatiquement dans le dossier choisi et dans une copie locale de secours.</div><div class="field"><label>Filtrer par collègue</label><select id="ownerFilter"><option value="">Tous</option>${colleagues.map(c=>`<option ${c===ownerFilter?'selected':''} value="${attr(c)}">${h(c)}</option>`).join('')}</select></div><div class="tfab-mygrid">${workspaceList.length?workspaceList.filter(x=>!ownerFilter||x.data.meta.responsable===ownerFilter).map(x=>`<div class="tfab-mycard ${x.id===selected?'active':''}"><div class="tfab-mycard-head"><span class="tfab-ep">${h(x.ep)}</span>${x.id===selected?'<span class="tfab-current">Sujet ouvert</span>':''}</div><h3>${h(x.title)}</h3><p><strong>${h(x.data.meta.responsable||'Non affecté')}</strong></p><p>Session ${h(x.session)} · Sujet n°${h(x.numero)}</p><small>Enregistré : ${h(new Date(x.updated).toLocaleString('fr-FR'))}</small><button class="btn ${x.id===selected?'':'primary'}" data-action="myOpen" data-myid="${attr(x.id)}">${x.id===selected?'Continuer ce sujet':'Ouvrir ce sujet'}</button><button class="btn small danger" data-action="myDelete" data-myid="${attr(x.id)}">🗑 Supprimer</button></div>`).join(''):'<div class="panel">Aucun sujet enregistré ici. Choisis « Nouveau EP1 » ou « Nouveau EP2 » pour commencer.</div>'}</div><div class="panel tfab-archive-link"><h2>Besoin d’un ancien sujet ?</h2><p>Le catalogue des anciens dossiers 2014–2026 est déjà intégré au logiciel et reste accessible sans aucune liaison JSON.</p><button class="btn" data-action="myArchive">Consulter le catalogue historique</button></div>`}
+async function myAction(name,el){if(name==='myDelete'){
+ const id=el.dataset.myid,rec=workspaceList.find(x=>x.id===id);if(!rec)return;
+ if(!confirm('Supprimer définitivement « '+rec.title+' » de Mes sujets ? Le catalogue historique et les fichiers sources ne seront pas supprimés.'))return;
+ clearTimeout(saveTimer);deletedSubjects.add(id);workspaceList=workspaceList.filter(x=>x.id!==id);
+ if(data._tfabWorkspaceId===id){unlinkJSON();const next=workspaceList[0];emptyWorkspace=!next;data=next?clone(next.data):ensureWorkspaceId(defaults('EP2'));docId=data.docs[0]?.id;blockId=null;history=[];future=[];lastSnapshot=JSON.stringify(data);updateHistory();}
+ revision++;tab='mes_sujets';
+ render();await save(true);return;
+ }if(name==='myArchive'){tab='bibliotheque';render();return}if(name==='myNew'){if(!confirm('Créer un nouveau sujet ? Le sujet actuel sera conservé dans « Mes sujets ».'))return;try{await save();if(linkedHandle)await writeLinkedJSON(false,true)}catch(e){console.warn(e)}unlinkJSON();emptyWorkspace=false;data=ensureWorkspaceId(defaults(el.dataset.ep||'EP2'));docId=data.docs[0]?.id;blockId=null;tab='general';revision++;history=[];future=[];lastSnapshot=JSON.stringify(data);updateHistory();await save();render();return}if(name==='myOpen'){const candidate=workspaceList.find(x=>x.id===el.dataset.myid);if(!candidate)return;if(candidate.id===data._tfabWorkspaceId){tab='general';render();return}try{await save();if(linkedHandle)await writeLinkedJSON(false,true)}catch(e){console.warn('Ancien sujet conservé localement, vérifiez JSON lié',e)}unlinkJSON();emptyWorkspace=false;data=validateSubject(JSON.parse(JSON.stringify(candidate.data)));ensureWorkspaceId(data);docId=data.docs[0]?.id;blockId=null;tab='general';revision++;await save();render();lastSnapshot=JSON.stringify(data);history=[];future=[];updateHistory();}}
 const showDropInfo=(message,error=false)=>{const el=$('tfabDropMessage');if(el){el.textContent=message;el.style.color=error?'#a32222':'#087d48'}};
 const canLink=()=>typeof window.showSaveFilePicker==='function'&&typeof window.showOpenFilePicker==='function';
 const total=()=>data.criteria.reduce((n,c)=>n+(Number(c.points)||0),0),target=()=>data.meta.ep==='EP1'?160:80;
@@ -607,16 +635,17 @@ let pickingBackup=false,backupTrace=[],backupError="",directory=null, diskRevisi
 const clone=x=>JSON.parse(JSON.stringify(x));
 const readKey=(key)=>new Promise((resolve,reject)=>{const r=storageDB.transaction(OBJECT_STORE,'readonly').objectStore(OBJECT_STORE).get(key);r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});
 const putKey=(key,value)=>new Promise((resolve,reject)=>{const t=storageDB.transaction(OBJECT_STORE,'readwrite');t.objectStore(OBJECT_STORE).put(value,key);t.oncomplete=resolve;t.onabort=t.onerror=()=>reject(t.error||Error('Écriture impossible'))});
-function capture(){ensureWorkspaceId(data);const copy=clone(data),i=workspaceList.findIndex(x=>x.id===copy._tfabWorkspaceId);const rec={id:copy._tfabWorkspaceId,title:copy.meta.titre||'Sans titre',ep:copy.meta.ep,numero:copy.meta.numero,session:copy.meta.session,updated:new Date().toISOString(),data:copy};if(i<0)workspaceList.unshift(rec);else workspaceList[i]=rec;}
-function envelope(){capture();return {format:'TFAB_CAP_GLOBAL_V26',updated:new Date().toISOString(),active:data._tfabWorkspaceId,subjects:clone(workspaceList),catalogue:LIBRARY,colleagues:colleagues.slice()};}
+let deletedSubjects=new Set(),emptyWorkspace=false;
+function capture(){if(emptyWorkspace&&workspaceList.length===0&&lastSnapshot===JSON.stringify(data))return;if(emptyWorkspace&&lastSnapshot!==JSON.stringify(data))emptyWorkspace=false;if(emptyWorkspace||deletedSubjects.has(data._tfabWorkspaceId))return;ensureWorkspaceId(data);const copy=clone(data),i=workspaceList.findIndex(x=>x.id===copy._tfabWorkspaceId);const rec={id:copy._tfabWorkspaceId,title:copy.meta.titre||'Sans titre',ep:copy.meta.ep,numero:copy.meta.numero,session:copy.meta.session,updated:new Date().toISOString(),data:copy};if(i<0)workspaceList.unshift(rec);else workspaceList[i]=rec;}
+function envelope(){capture();return {format:'TFAB_CAP_GLOBAL_V26',updated:new Date().toISOString(),active:emptyWorkspace?null:data._tfabWorkspaceId,deletedSubjects:[...deletedSubjects],subjects:clone(workspaceList),catalogue:LIBRARY,colleagues:colleagues.slice()};}
 function updateHistory(){if($('undoBtn'))$('undoBtn').disabled=!history.length;if($('redoBtn'))$('redoBtn').disabled=!future.length;}
 function rememberEdit(){const now=JSON.stringify(data);if(lastSnapshot&&now!==lastSnapshot){const prev=JSON.parse(lastSnapshot);if(prev._tfabWorkspaceId===data._tfabWorkspaceId){history.push(lastSnapshot);if(history.length>60)history.shift();}else{history=[];}future=[];}lastSnapshot=now;updateHistory();}
 function restoreHistory(from,to){if(!from.length)return;to.push(JSON.stringify(data));data=JSON.parse(from.pop());docId=data.docs[0]?.id;blockId=null;lastSnapshot=JSON.stringify(data);dirty();render();updateHistory();}
 function status26(mode,msg){if(pickingBackup)return;tfabUpdateVisualState(mode);$('saveIndicator').title=msg;$('saveStatus').textContent=msg;$('folderStatus').textContent=(directory?'Dossier : '+directory.name:backupFile?'Fichier : '+backupFile.name:'Aucun dossier choisi')+' — '+msg;}
 async function diskWrite(payload,rev,request=false){if(!directory&&!backupFile)return false;const target=directory||backupFile;let permission=await target.queryPermission({mode:'readwrite'});if(permission!=='granted'&&request)permission=await target.requestPermission({mode:'readwrite'});if(permission!=='granted')throw Error('Autorisation du dossier requise : Enregistrer');const f=directory?await directory.getFileHandle('TFAB_CAP_Sauvegarde.json',{create:true}):backupFile;const w=await f.createWritable();try{const serialized=JSON.stringify(payload,null,2);await w.write(serialized);await w.close();if(await (await f.getFile()).text()!==serialized)throw Error('Vérification après écriture échouée')}catch(e){try{await w.abort()}catch{}throw e}diskRevision=Math.max(diskRevision,rev);return true;}
 const save=(request=false)=>{if(pickingBackup)return Promise.resolve(false);if(!globalReady)return Promise.resolve(false);const rev=revision,payload=envelope(),active=clone(data);status26('busy','Enregistrement en cours');saveChain=saveChain.catch(()=>{}).then(async()=>{let local=false,disk=false,error='';try{if(rev>=revision){await putKey('global_v26',payload);await writeStorage(storageDB,active);localRevision=Math.max(localRevision,rev);}local=localRevision>=rev}catch(e){error=e.message}try{disk=await diskWrite(payload,rev,request)}catch(e){error=e.message}if(rev===revision&&!backupError)status26((directory||backupFile)&&disk?'ok':'error',disk?'Sauvegarde dossier confirmée':local?'Copie locale confirmée — '+(error||'choisir un dossier'):'Échec de sauvegarde : '+error);return disk||local;});return saveChain;};
-const dirty=()=>{if(!globalReady)return;ensureWorkspaceId(data);rememberEdit();revision++;capture();const rev=revision;if(storageDB){putKey('global_v26',envelope()).then(()=>{localRevision=Math.max(localRevision,rev)}).catch(()=>{});}status26('busy','Modifications en cours de sauvegarde');clearTimeout(saveTimer);saveTimer=setTimeout(()=>save(),350);};
-function mergeGlobal(incoming){if(Array.isArray(incoming?.colleagues))colleagues=[...new Set([...colleagues,...incoming.colleagues.filter(x=>typeof x==='string')])];if(incoming?.format!=='TFAB_CAP_GLOBAL_V26'||!Array.isArray(incoming.subjects))throw Error('Sauvegarde globale non conforme');const items=incoming.subjects.map(x=>{validateSubject(x.data);if(!x.id||x.data._tfabWorkspaceId!==x.id)throw Error('Identifiant de sujet incorrect');return x});for(const x of items){const i=workspaceList.findIndex(y=>y.id===x.id);if(i<0)workspaceList.push(x);else if(JSON.stringify(workspaceList[i].data)!==JSON.stringify(x.data)){const copy=clone(x);copy.id=workspaceId();copy.data._tfabWorkspaceId=copy.id;copy.title+=' (copie récupérée)';workspaceList.push(copy);}}}
+const dirty=()=>{if(!globalReady)return;emptyWorkspace=false;ensureWorkspaceId(data);rememberEdit();revision++;capture();const rev=revision;if(storageDB){putKey('global_v26',envelope()).then(()=>{localRevision=Math.max(localRevision,rev)}).catch(()=>{});}status26('busy','Modifications en cours de sauvegarde');clearTimeout(saveTimer);saveTimer=setTimeout(()=>save(),350);};
+function mergeGlobal(incoming){if(Array.isArray(incoming?.colleagues))colleagues=[...new Set([...colleagues,...incoming.colleagues.filter(x=>typeof x==='string')])];if(incoming?.format!=='TFAB_CAP_GLOBAL_V26'||!Array.isArray(incoming.subjects))throw Error('Sauvegarde globale non conforme');const items=incoming.subjects.map(x=>{validateSubject(x.data);if(!x.id||x.data._tfabWorkspaceId!==x.id)throw Error('Identifiant de sujet incorrect');return x});for(const x of items){if(deletedSubjects.has(x.id)||(incoming.deletedSubjects||[]).includes(x.id))continue;const i=workspaceList.findIndex(y=>y.id===x.id);if(i<0)workspaceList.push(x);else if(JSON.stringify(workspaceList[i].data)!==JSON.stringify(x.data)){const copy=clone(x);copy.id=workspaceId();copy.data._tfabWorkspaceId=copy.id;copy.title+=' (copie récupérée)';workspaceList.push(copy);}}}
 function traceBackup(message,reset=false){if(reset)backupTrace=[];backupTrace.push(new Date().toLocaleTimeString('fr-FR')+' — '+message);backupTrace=backupTrace.slice(-12);$('backupDiagnostic').textContent=backupTrace.join('\n');}
 function showBackupResult(mode,message){const was=pickingBackup;pickingBackup=false;status26(mode,message);pickingBackup=was;traceBackup(message);}
 async function attachBackup(chosen,isDir){
@@ -668,7 +697,7 @@ async function verifyBackup(){
  catch(e){backupError=e.name+' — '+e.message;showBackupResult('error','Vérification impossible : '+backupError);}
  finally{pickingBackup=false;}
 }
-async function initStorage(){try{storageDB=await openStorage();const global=await readKey('global_v26');directory=await readKey('directory_v26')||null;authCredential=await readKey('auth_v26')||authGetCredential();if(authCredential)await putKey('auth_v26',authCredential);if(global?.format==='TFAB_CAP_GLOBAL_V26'){workspaceList=global.subjects||[];const item=workspaceList.find(x=>x.id===global.active);if(item)data=clone(item.data);}else{const recovered=await readStorage(storageDB);if(recovered?.meta)data=recovered;try{workspaceDB=await workspaceOpen();workspaceList=await workspaceReadAll()}catch{} }if(Array.isArray(global?.colleagues))colleagues=[...new Set([...colleagues,...global.colleagues])];backupFile=await readKey('backupFile_v27')||null;for(const seed of PRELOADED){if(!workspaceList.some(x=>x.id===seed._tfabWorkspaceId)){const copy=clone(seed);workspaceList.push({id:copy._tfabWorkspaceId,title:copy.meta.titre,ep:copy.meta.ep,numero:copy.meta.numero,session:copy.meta.session,updated:new Date().toISOString(),data:copy});}}ensureWorkspaceId(data);docId=data.docs[0]?.id;blockId=null;globalReady=true;storageReady=true;render();lastSnapshot=JSON.stringify(data);updateHistory();await save();}catch(e){status26('error','Stockage local indisponible : '+e.message);globalReady=true;render();}};
+async function initStorage(){try{storageDB=await openStorage();const global=await readKey('global_v26');directory=await readKey('directory_v26')||null;authCredential=await readKey('auth_v26')||authGetCredential();if(authCredential)await putKey('auth_v26',authCredential);if(global?.format==='TFAB_CAP_GLOBAL_V26'){deletedSubjects=new Set(global.deletedSubjects||[]);workspaceList=(global.subjects||[]).filter(x=>!deletedSubjects.has(x.id));const item=workspaceList.find(x=>x.id===global.active)||workspaceList[0];if(item)data=clone(item.data);else{data=ensureWorkspaceId(defaults('EP2'));emptyWorkspace=true;}}else{const recovered=await readStorage(storageDB);if(recovered?.meta)data=recovered;try{workspaceDB=await workspaceOpen();workspaceList=await workspaceReadAll()}catch{} }if(Array.isArray(global?.colleagues))colleagues=[...new Set([...colleagues,...global.colleagues])];backupFile=await readKey('backupFile_v27')||null;for(const seed of PRELOADED){if(!deletedSubjects.has(seed._tfabWorkspaceId)&&!workspaceList.some(x=>x.id===seed._tfabWorkspaceId)){const copy=clone(seed);workspaceList.push({id:copy._tfabWorkspaceId,title:copy.meta.titre,ep:copy.meta.ep,numero:copy.meta.numero,session:copy.meta.session,updated:new Date().toISOString(),data:copy});}}ensureWorkspaceId(data);docId=data.docs[0]?.id;blockId=null;globalReady=true;storageReady=true;render();lastSnapshot=JSON.stringify(data);updateHistory();await save();}catch(e){status26('error','Stockage local indisponible : '+e.message);globalReady=true;render();}};
 const field=(label,path,val,type='text',opts={})=>`<div class="field"><label>${h(label)}</label>${type==='textarea'?`<textarea data-path="${attr(path)}" rows="${opts.rows||3}" placeholder="${attr(opts.placeholder||'')}" >${h(val)}</textarea>`:type==='select'?`<select data-path="${attr(path)}">${(opts.options||[]).map(o=>`<option value="${attr(o)}" ${String(o)===String(val)?'selected':''}>${o===''?'— Non renseigné / aucune coche —':h(o)}</option>`).join('')}</select>`:`<input data-path="${attr(path)}" type="${type}" value="${attr(val)}" placeholder="${attr(opts.placeholder||'')}"${path==='meta.kilometrage'?' inputmode="numeric" maxlength="6" pattern="[0-9]{0,6}" autocomplete="off"':''}>`}${opts.hint?`<span class="hint">${h(opts.hint)}</span>`:''}</div>`;
 const setPath=(root,path,value)=>{let obj=root;const keys=path.split('.');while(keys.length>1){let key=keys.shift();obj=obj[key]}obj[keys[0]]=value};
 const title=(heading,sub,action='')=>`<div class="section-heading"><div><h1>${heading}</h1><p>${sub}</p></div>${action}</div>`;
@@ -873,45 +902,54 @@ function materialSheet(){const m=data.material;return `<section class="print-she
 function allSheets(which){return which==='candidate'?candidateSheets():which==='evaluation'?evaluationSheet():which==='centre'?centerSheet():which==='materiel'?materialSheet():candidateSheets()+evaluationSheet()+centerSheet()+materialSheet()}
 function preparePrint(which){
  const root=$('printRoot'),raw=document.createElement('div');raw.innerHTML=allSheets(which);
- const sheets=[...raw.querySelectorAll(':scope > section.print-sheet')];
- const stage=document.createElement('div');stage.style.cssText='position:absolute;left:-12000px;top:0;width:186mm;visibility:hidden;pointer-events:none;z-index:-1';
- const measuring=document.createElement('section');measuring.className='print-sheet';measuring.style.cssText='width:100%;padding:0;display:block;';
- stage.appendChild(measuring);document.body.appendChild(stage);
- const limit=document.createElement('div');limit.style.cssText='height:235mm;width:1px';stage.appendChild(limit);
- const maxH=limit.offsetHeight;
- let physical=[],page=null,footerMarkup='';
- const startPage=()=>{measuring.innerHTML='';page=document.createElement('section');page.className='print-sheet';physical.push(page)};
- const finalize=()=>{page.insertAdjacentHTML('beforeend',footerMarkup)};
- startPage();
- for(const sheet of sheets){
-  footerMarkup=sheet.querySelector('.paper-footer')?.outerHTML||printHeader('Sujet');
-  if(physical.length>1||page.childElementCount){startPage()}
-  // Pages are split at block boundaries; a block too tall is left intact for editing/print adjustment.
-  const nodes=[...sheet.children].filter(x=>!x.classList.contains('paper-footer'));
-  for(const node of nodes){
-   const clone=node.cloneNode(true);clone.querySelectorAll?.('.paper-footer').forEach(f=>f.remove());if(clone.classList?.contains('cover'))clone.style.cssText='min-height:0;gap:9px;padding-top:5mm';
-   if(clone.classList.contains('source-page-start')&&page.childElementCount){finalize();startPage();}
-   measuring.appendChild(clone);
-   if(measuring.scrollHeight>maxH&&page.childElementCount){measuring.removeChild(clone);finalize();startPage();measuring.innerHTML='';measuring.appendChild(clone)}
-   if(clone.classList.contains('source-table-block')&&measuring.scrollHeight>maxH){let z=1;while(measuring.scrollHeight>maxH&&z>.55){z-=.05;clone.style.zoom=String(z);}}
-   page.appendChild(clone.cloneNode(true));
+ const stage=document.createElement('div');stage.className='tfab-measure-stage';document.body.appendChild(stage);
+ const physical=[];let page,body,footerMarkup;
+ const teacher=(data.meta.responsable||'Professeur responsable').trim()+' — CAP Maintenance des véhicules';
+ function start(){page=document.createElement('section');page.className='print-sheet tfab-physical';const head=document.createElement('div');head.className='teacher-print-header';head.textContent=teacher;page.append(head);body=document.createElement('div');body.className='tfab-page-body';page.append(body);page.insertAdjacentHTML('beforeend',footerMarkup);stage.append(page);}
+ function fits(){return body.scrollHeight<=body.clientHeight+1;}
+ function finish(){if(!body.childElementCount){page.remove();return;}physical.push(page);}
+ function normalize(node){const x=node.cloneNode(true);x.querySelectorAll?.('.paper-footer').forEach(f=>f.remove());if(x.classList.contains('cover'))x.style.cssText='min-height:0;gap:9px;padding-top:5mm';return x;}
+ function add(nodes){const group=document.createElement('div');group.className='tfab-print-group';nodes.forEach(n=>group.append(normalize(n)));return group;}
+ function place(group){
+  body.append(group);if(fits())return;
+  group.remove();if(body.childElementCount){finish();start();}
+  body.append(group);if(fits())return;
+  // A table that exceeds a full page is divided only between complete row groups.
+  const table=group.querySelector('table');const tables=group.querySelectorAll('table');
+  if(table&&tables.length===1&&!table.closest('.ord')&&table.rows.length>1){
+   const rows=[...table.rows],chunks=[];let end=0,chunk=[];
+   for(let i=0;i<rows.length;i++){chunk.push(rows[i]);for(const cell of rows[i].cells)end=Math.max(end,i+(cell.rowSpan||1));if(i+1>=end){chunks.push(chunk);chunk=[];}}
+   if(chunks.length>1){
+    group.remove();let segment=null,tbody=null;
+    const make=(first)=>{const g=first?group.cloneNode(true):document.createElement('div');g.className='tfab-print-group';const t=first?g.querySelector('table'):table.cloneNode(false);if(!first){for(const col of table.querySelectorAll(':scope > colgroup'))t.append(col.cloneNode(true));g.append(t);}for(const child of [...t.children])if(['THEAD','TBODY','TFOOT','TR'].includes(child.tagName))child.remove();const tb=document.createElement('tbody');t.append(tb);body.append(g);return [g,tb];};
+    for(const ch of chunks){if(!segment)[segment,tbody]=make(!physical.length||!group.dataset.used);group.dataset.used='1';const added=ch.map(r=>r.cloneNode(true));added.forEach(r=>tbody.append(r));if(!fits()&&tbody.rows.length>added.length){added.forEach(r=>r.remove());finish();start();[segment,tbody]=make(false);added.forEach(r=>tbody.append(r));}if(!fits()){let z=1;while(!fits()&&z>.15){z-=.025;segment.style.zoom=String(z);}if(!fits())throw Error('Un tableau dépasse la page imprimable.');}}
+    return;
+   }
   }
-  finalize();
-  measuring.innerHTML='';
+  // Oversized indivisible block: proportional fit on its own page, never overlap.
+  let z=1;while(!fits()&&z>.15){z-=.025;group.style.zoom=String(z);}if(!fits())throw Error('Un bloc dépasse la page imprimable.');
  }
- stage.remove();
- root.innerHTML='';physical.forEach((p,i)=>{p.querySelectorAll('.pageno').forEach(x=>x.textContent=String(i+1));p.querySelectorAll('.pagecount').forEach(x=>x.textContent=String(physical.length));root.appendChild(p)});
- return physical;
+ try{
+  for(const sheet of raw.querySelectorAll(':scope > section.print-sheet')){
+   footerMarkup=sheet.querySelector('.paper-footer')?.outerHTML||printHeader('Sujet');start();
+   const nodes=[...sheet.children].filter(x=>!x.classList.contains('paper-footer'));
+   for(let i=0;i<nodes.length;i++){
+    const n=nodes[i],set=[n];if(n.classList.contains('section-label')||/^H[1-4]$/.test(n.tagName)||n.classList.contains('badge-doc')){while(i+1<nodes.length){const next=nodes[++i];set.push(next);if(!next.classList.contains('section-label')&&!/^H[1-4]$/.test(next.tagName))break;}}
+    place(add(set));
+   }
+   finish();
+  }
+  root.innerHTML='';physical.forEach((p,i)=>{p.querySelectorAll('.pageno').forEach(x=>x.textContent=i+1);p.querySelectorAll('.pagecount').forEach(x=>x.textContent=physical.length);root.append(p);});return physical;
+ }finally{stage.remove();}
 }
-
 async function printNow(which){
  const name=(data.meta.responsable||'Professeur responsable').trim();
  let style=document.getElementById('tfabPrintMargins');
  if(!style){style=document.createElement('style');style.id='tfabPrintMargins';document.head.appendChild(style);}
- style.textContent='@media print{@page{size:A4 portrait;margin:12mm 12mm 23mm;@top-left{content:""}@top-center{content:""}@top-right{content:""}@bottom-left{content:""}@bottom-center{content:""}@bottom-right{content:""}}}';
+ style.textContent='@media print{@page{size:A4 portrait;margin:12mm 12mm 8mm;@top-left{content:""}@top-center{content:""}@top-right{content:""}@bottom-left{content:""}@bottom-center{content:""}@bottom-right{content:""}}}';
  const raw=document.createElement('div');raw.innerHTML=allSheets(which);
  await Promise.all([...raw.querySelectorAll('img')].map(img=>img.decode?.().catch(()=>{})||Promise.resolve()));
- const pages=preparePrint(which);for(const page of pages){const head=document.createElement('div');head.className='teacher-print-header';head.textContent=name+' — CAP Maintenance des véhicules';page.prepend(head);}window.print();
+ try{preparePrint(which);window.print();}catch(e){alert('Impression interrompue : '+e.message);}
 }
 
 // Export DOCX autonome (WordprocessingML + JSZip intégré) ; les tableaux, textes et images sont modifiables.
@@ -1035,7 +1073,7 @@ function wordElement(el,context={}){
  if(tag==='p')return wP(wordInline(el,{sz:context.or?15:18}),{after:context.or?70:100,line:context.or?215:250});
  if(tag==='div'){
   if(el.classList.contains('answerlines'))return wP(wR('..............................................................................'),{after:100});
-  if(el.classList.contains('source-page-start'))return wP('<w:r><w:br w:type="page"/></w:r>',{after:0})+wP(wordInline(el,{bold:true,sz:20}),{align:'center',after:130,before:130,fill:'DDDDDD',keep:true});
+  if(el.classList.contains('source-page-start'))return wP(wordInline(el,{bold:true,sz:20}),{align:'center',after:130,before:130,fill:'DDDDDD',keep:true});
   if(el.classList.contains('section-label'))return wP(wordInline(el,{bold:true,sz:20}),{align:'center',after:130,before:130,fill:'DDDDDD',keep:true});
   if(el.classList.contains('badge-doc'))return wP(wordInline(el,{bold:true,sz:27}),{align:'center',after:180,keep:true});
   if(el.classList.contains('identity'))return wP(wordInline(el,{sz:18}),{after:160});
@@ -1077,8 +1115,8 @@ async function exportWord(which='candidate'){
   await wordGatherImages(wrapper);
   const secs=[...wrapper.querySelectorAll(':scope > section.print-sheet')];
   if(!secs.length)throw new Error('Aucune page à exporter');
-  const body=secs.map((el,i)=>`${i?wP('<w:r><w:br w:type="page"/></w:r>',{after:0}):''}${[...el.childNodes].map(n=>wordElement(n)).join('')}`).join('');
-  const sect='<w:sectPr><w:headerReference w:type="default" r:id="rIdHeader"/><w:footerReference w:type="default" r:id="rIdFooter"/><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="690" w:right="800" w:bottom="1400" w:left="800" w:header="360" w:footer="360"/></w:sectPr>';
+  const body=secs.map((el,i)=>{const xml=[...el.childNodes].map(n=>wordElement(n)).join('');return i?xml.replace('<w:pPr>','<w:pPr><w:pageBreakBefore/>'):xml;}).join('');
+  const sect='<w:sectPr><w:headerReference w:type="default" r:id="rIdHeader"/><w:footerReference w:type="default" r:id="rIdFooter"/><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="690" w:right="800" w:bottom="1200" w:left="800" w:header="360" w:footer="450"/></w:sectPr>';
   const doc=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><w:body>${body}${sect}</w:body></w:document>`;
   const kind={candidate:'Sujet',evaluation:'Grille',centre:'Centre',materiel:'Matériel',all:'Dossier complet'}[which]||'Sujet';
   const zip=new JSZip();
