@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TFAB • Éditeur de sujets d’examen CAP MV — V2.8 · Catalogue et Mes sujets</title>
+<title>TFAB • Éditeur de sujets d’examen CAP MV — V2.8.1 · Catalogue et Mes sujets</title>
 <style>
 :root{--ink:#19253a;--navy:#14213a;--navy2:#1f3352;--accent:#2671da;--accent2:#e6f0ff;--gray:#66768a;--line:#dce3ec;--back:#f3f6fa;--white:#fff;--green:#117e57;--red:#b83d4a;--warn:#a56c12;--radius:13px}
 *{box-sizing:border-box}html,body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--back)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.app{display:grid;grid-template-columns:235px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--navy);color:#dbe7f9;min-height:100vh;position:sticky;top:0;height:100vh;padding:23px 14px;display:flex;flex-direction:column}.brand{padding:0 12px 25px}.brand strong{font-size:24px;letter-spacing:-.7px;color:#fff}.brand div{font-size:11px;letter-spacing:.04em;color:#9bb2d0;margin-top:5px}.nav-caption{padding:8px 12px;color:#8aa1bf;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.nav{display:flex;flex-direction:column;gap:4px}.nav button{width:100%;border:0;border-radius:10px;text-align:left;padding:12px;background:transparent;color:#cad8eb;font-weight:650;display:flex;align-items:center;gap:10px;font-size:13px}.nav button.active,.nav button:hover{background:#2b4365;color:#fff}.nav button span{font-size:16px}.sidebar-bottom{margin-top:auto;padding:12px;font-size:11px;line-height:1.65;color:#92a7c5;border-top:1px solid #334762}.main{min-width:0}.topbar{padding:18px 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;position:sticky;top:0;z-index:8}.top-title strong{display:block;font-size:17px}.top-title small{color:var(--gray);font-size:12px}.actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.btn{border:1px solid #cbd7e4;border-radius:9px;padding:9px 12px;font-size:12px;background:#fff;font-weight:750;color:#263951}.btn:hover{background:#eff5fb}.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.btn.primary:hover{background:#1259bd}.btn.ghost{background:transparent}.btn.danger{color:var(--red);border-color:#edcbd1}.btn.small{padding:7px 9px;font-size:11px}.content{padding:27px 30px 65px;max-width:1600px;margin:auto}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;margin-bottom:22px}.section-heading h1{font-size:24px;letter-spacing:-.6px;margin:0 0 6px}.section-heading p{margin:0;font-size:13px;color:var(--gray);line-height:1.55}.panel{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 3px 12px #1f2f4408;margin-bottom:18px}.panel h2{font-size:15px;margin:0 0 18px}.panel h3{font-size:13px;margin:18px 0 10px}.form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.form-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.field{min-width:0;display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;font-weight:750;color:#394a63}.field input,.field select,.field textarea{width:100%;padding:10px 11px;border:1px solid #ccd6e3;background:#fff;border-radius:8px;font-size:13px;color:#19283f}.field textarea{min-height:80px;resize:vertical;line-height:1.55}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid #a4c6fa;border-color:#458de8}.muted{color:var(--gray);font-size:12px;line-height:1.55}.hint{font-size:11px;color:var(--gray)}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:13px}.toolbar h2{margin:0}.chip{font-size:11px;background:#e8f1ff;color:#1859ae;padding:6px 10px;border-radius:50px;font-weight:750}.chip.green{background:#e6f6ee;color:#0d7547}.chip.amber{background:#fff3db;color:#9a630b}.split{display:grid;grid-template-columns:270px minmax(290px,1fr);gap:15px;align-items:start}.split.has-detail{grid-template-columns:240px minmax(280px,1.1fr) minmax(280px,1fr)}.item-list{display:flex;flex-direction:column;gap:7px}.item{border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px;text-align:left;width:100%;font-size:12px;color:#273954;line-height:1.4}.item b{display:block;margin-bottom:3px;font-size:12px}.item small{font-size:11px;color:var(--gray)}.item.active{border-color:#4084da;background:#ecf4ff}.blockline{display:flex;align-items:center;gap:7px;padding:10px;border:1px solid var(--line);border-radius:9px;background:#fff;margin:7px 0}.blockline.selected{border-color:#3f84de;background:#f1f7ff}.blockline .summary{flex:1;min-width:0;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:12px}.blockline .kind{font-size:10px;background:#eef1f6;border-radius:4px;padding:3px 5px;color:#52657b}.inline-actions{display:flex;gap:5px;flex-wrap:wrap}.mini{padding:5px 7px;border:1px solid #d4e0eb;background:#fff;border-radius:6px;font-size:11px;color:#4b5c70}.mini:hover{background:#eaf2fe}.mini.red{color:var(--red)}.block-actions{display:flex;gap:6px;align-items:center;margin-bottom:12px}.empty{padding:27px 12px;text-align:center;color:#79899f;border:1px dashed #c7d3e1;border-radius:9px;font-size:12px}.subtle{background:#f7f9fc;border-radius:9px;padding:11px 13px}.editor-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.edit-card{border:1px solid var(--line);border-radius:10px;padding:13px;background:#fff;margin-bottom:10px}.edit-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px}.edit-head strong{font-size:13px}.addline{display:flex;gap:7px;flex-wrap:wrap}.addline select{flex:1;min-width:140px;border:1px solid var(--line);border-radius:7px;padding:9px;font-size:12px}.statusline{display:flex;gap:9px;align-items:center;font-size:11px;color:var(--gray)}.statusdot{height:7px;width:7px;background:#23aa76;border-radius:50%;display:inline-block}.statusdot.warn{background:#efaf39}.audit{display:flex;gap:9px;align-items:flex-start;border:1px solid #d6e4d9;background:#f4fbf7;border-radius:9px;padding:12px;margin-bottom:8px;font-size:12px;line-height:1.5}.audit.warn{border-color:#f2ddb8;background:#fffbf3}.audit.error{border-color:#eccfd1;background:#fff7f7}.audit .mark{font-weight:900;font-size:14px}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.stat{background:#fff;border:1px solid var(--line);border-radius:11px;padding:14px}.stat b{display:block;font-size:22px}.stat small{font-size:11px;color:var(--gray)}.preview-paper{background:#fff;max-width:790px;margin:0 auto;padding:45px 42px;border:1px solid #c5cbd3;box-shadow:0 7px 23px #16253a12;min-height:700px;font-family:Arial,sans-serif;font-size:12px}.preview-paper h1{font-size:22px;text-align:center}.preview-paper h2{font-size:16px;text-align:center}.preview-paper h3{font-size:13px}.paper-head{text-align:center;border-bottom:2px solid #222;padding-bottom:10px;margin-bottom:25px}.paper-foot{border-top:1px solid #555;margin-top:28px;padding-top:6px;text-align:center;font-size:9px}.preview-paper p{line-height:1.5}.preview-paper table{border-collapse:collapse;width:100%}.preview-paper td,.preview-paper th{border:1px solid #555;padding:6px;text-align:left;vertical-align:top}.preview-paper th{background:#eee}.answerlines{line-height:28px;white-space:normal;letter-spacing:1px;color:#969696;overflow:hidden}.print-sheet{font-family:Arial,Helvetica,sans-serif;color:#111;font-size:11pt;padding:5mm 2mm}.print-sheet h1{text-align:center;font-size:20pt}.print-sheet h2{text-align:center;font-size:15pt}.print-sheet h3{font-size:12pt;background:#ddd;padding:6px;text-align:center;border:1px solid #555}.print-sheet h4{font-size:11pt}.print-sheet p,.print-sheet li{line-height:1.38}.print-sheet table{width:100%;border-collapse:collapse;margin:10px 0}.print-sheet th,.print-sheet td{border:1px solid #333;padding:6px;vertical-align:top;text-align:left}.print-sheet th{background:#ddd}.print-sheet img{max-width:100%;max-height:220mm;object-fit:contain}.print-sheet .paper-footer{border:1px solid #666;text-align:center;padding:6px;font-size:9pt;margin-top:18px}.print-sheet .answer-row{height:23px;border-bottom:1px dotted #777}.print-sheet .pagebreak{break-before:page;page-break-before:always}.print-sheet .nobreak{break-inside:avoid;page-break-inside:avoid}.print-sheet .cover{min-height:240mm;text-align:center;display:flex;flex-direction:column;justify-content:flex-start;gap:20px;padding-top:15mm}.print-sheet .cover .identity{text-align:left;font-size:11pt}.print-sheet .cover h1{margin-top:40px}.print-sheet .cover h2{font-size:18pt}.print-sheet .cover img{max-height:95mm;max-width:150mm;margin:10px auto}.print-sheet .cover .paper-footer{margin-top:auto}.print-sheet .section-label{font-weight:bold;background:#ddd;border:1px solid #555;padding:7px;text-align:center;margin:18px 0 10px}.print-sheet .q{margin:13px 0;break-inside:avoid}.print-sheet .tasklist{margin:4px 0 13px}.print-sheet .measure{font-size:9.5pt}.print-sheet .tight{font-size:9pt}.print-sheet .grading th,.print-sheet .grading td{font-size:9pt}.print-sheet .grading td:nth-last-child(1){white-space:nowrap}.print-sheet .big-note{font-size:16pt;font-weight:700;text-align:right}.print-sheet .twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.print-sheet .ord{font-size:9pt}.print-sheet .badge-doc{margin-bottom:14px;font-size:16pt;font-weight:700;text-align:center}.print-sheet .quiet{color:#555}.previewprint{min-height:300px;background:#e9edf2;border:1px dashed #a4b3c5;border-radius:8px;padding:20px}.footer{font-size:11px;color:#8391a3;margin-top:25px}.hidden{display:none!important}#printRoot{display:none}
@@ -143,7 +143,7 @@
 #tfabDropMessage:empty{display:none}
 
 
-/* V2.8 : barre outils stable et indicateur minimal, aucun changement de hauteur au fil des frappes */
+/* V2.8.1 : barre outils stable et indicateur minimal, aucun changement de hauteur au fil des frappes */
 .topbar{gap:14px;padding:12px 18px;align-items:center;min-height:76px}
 .top-title{min-width:155px;flex:1 1 205px;max-width:350px}
 .top-title strong{font-size:14px;line-height:1.3}
@@ -175,7 +175,7 @@
 @media(prefers-reduced-motion:reduce){.statusline[data-state="busy"] .statusdot{animation:none}}
 @media print{.tfab-tools-menu,.statusline{display:none!important}}
 
-/* V2.8 espace de travail */
+/* V2.8.1 espace de travail */
 .tfab-workspace-help{background:#eaf4ff;border-left:4px solid #2681df;padding:15px 18px;border-radius:10px;color:#23446d;margin:16px 0 20px;line-height:1.55;font-size:13px}
 .tfab-mygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:14px;align-items:stretch;margin:16px 0 22px}
 .tfab-mycard{background:white;border:1px solid #dce6f2;border-radius:13px;padding:17px;display:flex;flex-direction:column;gap:8px;box-shadow:0 3px 12px rgba(23,57,97,.05);min-height:205px}
@@ -231,6 +231,10 @@
 .grid-cell-image{display:block;margin:3px auto}
 .print-sheet .grid-cell-image{max-width:100%;height:auto;display:block;margin:2px auto}
 .detail-panel{min-width:0}
+
+.teacher-print-header{font:9pt Arial;color:#222;text-align:center;min-height:7mm;flex-shrink:0;margin:0 0 1mm}
+
+.print-sheet .source-table td,.print-sheet .measure td{vertical-align:middle;overflow-wrap:anywhere;word-break:normal}.print-sheet .grid-cell-image{max-width:100%;object-fit:contain;height:auto}
 </style>
 </head>
 <body>
@@ -261,7 +265,7 @@
 </div>
 <div class="app">
  <aside class="sidebar">
-  <div class="brand"><strong>TFAB <span style="color:#6eb0ff">/ EXAMENS</span></strong><div>CAP MAINTENANCE DES VÉHICULES • V2.8</div></div>
+  <div class="brand"><strong>TFAB <span style="color:#6eb0ff">/ EXAMENS</span></strong><div>CAP MAINTENANCE DES VÉHICULES • V2.8.1</div></div>
   <div class="nav-caption">ESPACE DE TRAVAIL</div>
   <nav class="nav" id="nav"></nav>
   <div class="sidebar-bottom">◉ Fonctionne hors connexion<br>◉ Sauvegarde locale IndexedDB<br>◉ Sauvegarde globale automatique<br>◉ Import / export dans Paramètres<br><span style="color:#b4c8e2">Les données ne sont pas envoyées à un serveur. Conservez aussi des sauvegardes JSON.</span></div>
@@ -377,7 +381,7 @@ let libSearch='',libEp='all',libFocus=null;
 let tab='mes_sujets',docId=data.docs[0]?.id,blockId=null,editMode=true,saveTimer=null,photoTarget=null;
 let storageDB=null,storageReady=false,revision=0,saveChain=Promise.resolve();
 let linkedHandle=null,linkedName='',linkedSavedRevision=-1,linkedQueue=Promise.resolve(),linkEpoch=0,linkedStatus='',linkedError=false;
-// V2.8 - Registre des sujets personnels (indépendant du catalogue historique et du JSON lié)
+// V2.8.1 - Registre des sujets personnels (indépendant du catalogue historique et du JSON lié)
 let workspaceDB=null,workspaceList=[],workspaceBusy=false;
 const workspaceId=()=> 'cap-'+(crypto?.randomUUID?.()|| (Date.now().toString(36)+'-'+Math.random().toString(36).slice(2)));
 const ensureWorkspaceId=subject=>{if(subject&&!subject._tfabWorkspaceId)subject._tfabWorkspaceId=workspaceId();return subject};
@@ -873,7 +877,7 @@ function preparePrint(which){
  const stage=document.createElement('div');stage.style.cssText='position:absolute;left:-12000px;top:0;width:186mm;visibility:hidden;pointer-events:none;z-index:-1';
  const measuring=document.createElement('section');measuring.className='print-sheet';measuring.style.cssText='width:100%;padding:0;display:block;';
  stage.appendChild(measuring);document.body.appendChild(stage);
- const limit=document.createElement('div');limit.style.cssText='height:242mm;width:1px';stage.appendChild(limit);
+ const limit=document.createElement('div');limit.style.cssText='height:235mm;width:1px';stage.appendChild(limit);
  const maxH=limit.offsetHeight;
  let physical=[],page=null,footerMarkup='';
  const startPage=()=>{measuring.innerHTML='';page=document.createElement('section');page.className='print-sheet';physical.push(page)};
@@ -900,7 +904,15 @@ function preparePrint(which){
  return physical;
 }
 
-function printNow(which){preparePrint(which);window.print();}
+async function printNow(which){
+ const name=(data.meta.responsable||'Professeur responsable').trim();
+ let style=document.getElementById('tfabPrintMargins');
+ if(!style){style=document.createElement('style');style.id='tfabPrintMargins';document.head.appendChild(style);}
+ style.textContent='@media print{@page{size:A4 portrait;margin:12mm 12mm 23mm;@top-left{content:""}@top-center{content:""}@top-right{content:""}@bottom-left{content:""}@bottom-center{content:""}@bottom-right{content:""}}}';
+ const raw=document.createElement('div');raw.innerHTML=allSheets(which);
+ await Promise.all([...raw.querySelectorAll('img')].map(img=>img.decode?.().catch(()=>{})||Promise.resolve()));
+ const pages=preparePrint(which);for(const page of pages){const head=document.createElement('div');head.className='teacher-print-header';head.textContent=name+' — CAP Maintenance des véhicules';page.prepend(head);}window.print();
+}
 
 // Export DOCX autonome (WordprocessingML + JSZip intégré) ; les tableaux, textes et images sont modifiables.
 const wx=s=>String(s??'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f]/g,'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
@@ -912,12 +924,12 @@ function wR(text,o={}){
  let rp=`<w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="Arial"/><w:sz w:val="${sz}"/>`;
  if(o.bold)rp+='<w:b/>';
  if(o.italic)rp+='<w:i/>';
- if(o.blue)rp+='<w:color w:val="1745AA"/>';
+ if(o.blue)rp+='<w:color w:val="1745AA"/>';else if(o.color)rp+='<w:color w:val="'+o.color+'"/>';
  if(o.yellow)rp+='<w:shd w:fill="FFF0A7"/>';
  return `<w:r><w:rPr>${rp}</w:rPr><w:t xml:space="preserve">${wx(text)}</w:t></w:r>`;
 }
 function wP(runs='',opt={}){
- let pp=`<w:spacing w:before="${opt.before||0}" w:after="${opt.after===undefined?90:opt.after}" w:line="${opt.line||240}" w:lineRule="auto"/>`;
+ let pp=`<w:spacing w:before="${opt.before||0}" w:after="${opt.after===undefined?90:opt.after}" w:line="${Math.max(240,opt.line||240)}" w:lineRule="auto"/>`;
  if(opt.align)pp+=`<w:jc w:val="${opt.align}"/>`;
  if(opt.keep)pp+='<w:keepNext/>';
  if(opt.bottom)pp+='<w:pBdr><w:bottom w:val="dotted" w:sz="4" w:space="1" w:color="777777"/></w:pBdr>';
@@ -944,11 +956,11 @@ function wordDrawing(img,o={}){
  const m=wordImages.find(x=>x.id===id);
  if(!m)return '';
  let maxWidth=6000000, maxHeight=8100000;
- if(o.insideCell){maxWidth=o.cellWidth?Math.max(100000,o.cellWidth*635-90000):2400000;maxHeight=3300000;if(img.classList.contains('grid-cell-image'))maxWidth*=Math.min(1,Math.max(.1,(parseFloat(img.style.width)||90)/100));}
+ if(o.insideCell){maxWidth=o.cellWidth?Math.max(1000,(o.cellWidth-110)*635):2400000;maxHeight=3300000;if(img.classList.contains('grid-cell-image'))maxWidth*=Math.min(1,Math.max(.1,(parseFloat(img.style.width)||90)/100));}
  if(img.classList.contains('or-schema')){maxWidth=2250000;maxHeight=4900000}
  if(img.closest('.cover')){maxWidth=4700000;maxHeight=4500000}
  const ratio=m.width/m.height;
- let cy=Math.min(maxHeight,maxWidth/ratio),cx=cy*ratio;
+ let cy=Math.min(maxHeight,maxWidth/ratio,m.height*9525),cx=cy*ratio;
  if(cx>maxWidth){cx=maxWidth;cy=cx/ratio}
  cx=Math.round(cx);cy=Math.round(cy);
  const drawingId=++wordCounter;
@@ -972,21 +984,23 @@ function wordTable(table,or=false){
   if(s>1)pr+=`<w:gridSpan w:val="${s}"/>`;
   if(vert)pr+=`<w:vMerge w:val="${vert}"/>`;
   if(gray)pr+=`<w:shd w:fill="${gray}"/>`;
-   if(cell.classList.contains('or-km-label')||cell.classList.contains('or-fuel-label'))pr+='<w:vAlign w:val="center"/>';
+   pr+='<w:vAlign w:val="center"/>';
+  const cellColor=(cell.style.color.match(/\d+/g)||[]).slice(0,3);const color=cellColor.length===3?cellColor.map(v=>Number(v).toString(16).padStart(2,'0')).join('').toUpperCase():undefined;
+  const cellOpts={insideCell:true,cellWidth:tableWidth(colIndex,s),color,bold:cell.tagName==='TH'||cell.style.fontWeight==='bold',sz:compact?14:or?14:16};
   let contents='';
   const centerCell=cell.style.textAlign==='center'||['or-check','or-center','or-km-label','or-fuel-label','or-km-digit','or-fuel-tick'].some(k=>cell.classList.contains(k));
   if(!vert||vert==='restart'){
    const children=[...cell.childNodes];
    let acc=[];
-   function flush(){if(acc.length){let runs=acc.map(n=>wordInline(n,{insideCell:true,bold:cell.tagName==='TH',sz:compact?14:or?14:16})).join('');if(runs.replace(/<[^>]*>/g,'').trim()||runs.includes('<w:drawing'))contents+=wP(runs,{after:compact?0:or?35:60,line:compact?170:or?210:230,align:centerCell?'center':cell.style.textAlign==='right'?'right':undefined});acc=[]}}
+   function flush(){if(acc.length){let runs=acc.map(n=>wordInline(n,cellOpts)).join('');if(runs.replace(/<[^>]*>/g,'').trim()||runs.includes('<w:drawing'))contents+=wP(runs,{after:compact?0:or?15:30,line:240,align:centerCell?'center':cell.style.textAlign==='right'?'right':undefined});acc=[]}}
    for(const child of children){
-    if(child.nodeType===1&&child.tagName==='IMG'){flush();contents+=wP(wordDrawing(child,{insideCell:true,cellWidth:tableWidth(colIndex,s)}),{after:35,align:'center'});continue}
-    if(child.nodeType===1&&['P','DIV','UL','OL'].includes(child.tagName)){flush();if(child.tagName==='UL'||child.tagName==='OL'){for(const li of child.querySelectorAll(':scope > li'))contents+=wP(wR('• ',{sz:or?14:16})+wordInline(li,{insideCell:true,sz:or?14:16}),{after:35})}else contents+=wP(wordInline(child,{insideCell:true,bold:cell.tagName==='TH',sz:or?14:16}),{after:35,line:210,align:centerCell?'center':cell.style.textAlign==='right'?'right':undefined});continue}
+    if(child.nodeType===1&&child.tagName==='IMG'){flush();contents+=wP(wordDrawing(child,cellOpts),{after:35,align:'center'});continue}
+    if(child.nodeType===1&&['P','DIV','UL','OL'].includes(child.tagName)){flush();if(child.tagName==='UL'||child.tagName==='OL'){for(const li of child.querySelectorAll(':scope > li'))contents+=wP(wR('• ',{sz:or?14:16})+wordInline(li,cellOpts),{after:35})}else contents+=wP(wordInline(child,cellOpts),{after:35,line:210,align:centerCell?'center':cell.style.textAlign==='right'?'right':undefined});continue}
     acc.push(child)
    }
    flush();
   }
-  if(!contents)contents=wP(wR(' ',{sz:compact?14:or?14:16}),{after:compact?0:15,line:compact?170:230});
+  if(!contents)contents=wP(wR(' ',{sz:compact?14:or?14:16}),{after:0,line:240});
   return `<w:tc><w:tcPr>${pr}</w:tcPr>${contents}</w:tc>`;
  }
  // rowspans tracked: null continuation cells get a w:vMerge continue.
@@ -994,7 +1008,7 @@ function wordTable(table,or=false){
  for(const row of rows){
    let cindex=0,cells=[],source=[...row.cells],si=0;
    while(cindex<colCount){
-     if(occupied[cindex]>0){let mergeSpan=1;while(cindex+mergeSpan<colCount&&occupied[cindex+mergeSpan]>0&&mergeIds[cindex+mergeSpan]===mergeIds[cindex])mergeSpan++;cells.push(`<w:tc><w:tcPr><w:tcW w:w="${tableWidth(cindex,mergeSpan)}" w:type="dxa"/>${mergeSpan>1?`<w:gridSpan w:val="${mergeSpan}"/>`:''}<w:vMerge w:val="continue"/></w:tcPr>${wP('')}</w:tc>`);for(let t=0;t<mergeSpan;t++)occupied[cindex+t]--;cindex+=mergeSpan;continue}
+     if(occupied[cindex]>0){let mergeSpan=1;while(cindex+mergeSpan<colCount&&occupied[cindex+mergeSpan]>0&&mergeIds[cindex+mergeSpan]===mergeIds[cindex])mergeSpan++;cells.push(`<w:tc><w:tcPr><w:tcW w:w="${tableWidth(cindex,mergeSpan)}" w:type="dxa"/>${mergeSpan>1?`<w:gridSpan w:val="${mergeSpan}"/>`:''}<w:vMerge w:val="continue"/><w:vAlign w:val="center"/></w:tcPr>${wP(wR(' ',{sz:table.classList.contains('source-compact')?14:16}),{after:0,line:240})}</w:tc>`);for(let t=0;t<mergeSpan;t++)occupied[cindex+t]--;cindex+=mergeSpan;continue}
      const cell=source[si++];if(!cell){cells.push(cellXml(document.createElement('td'),1,'',cindex));cindex++;continue}
      const span=Math.min(Number(cell.colSpan)||1,colCount-cindex),rspan=Number(cell.rowSpan)||1;
      cells.push(cellXml(cell,span,rspan>1?'restart':'',cindex));
@@ -1003,7 +1017,7 @@ function wordTable(table,or=false){
    }
    out.push(`<w:tr><w:trPr><w:cantSplit/>${Number(row.dataset?.heightMm)>0?'<w:trHeight w:val="'+Math.round(Number(row.dataset.heightMm)*56.693)+'" w:hRule="atLeast"/>':''}</w:trPr>${cells.join('')}</w:tr>`)
  }
- return `<w:tbl><w:tblPr><w:tblW w:w="${width}" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblBorders><w:top w:val="single" w:sz="5"/><w:left w:val="single" w:sz="5"/><w:bottom w:val="single" w:sz="5"/><w:right w:val="single" w:sz="5"/><w:insideH w:val="single" w:sz="5"/><w:insideV w:val="single" w:sz="5"/></w:tblBorders><w:tblCellMar><w:top w:w="42" w:type="dxa"/><w:bottom w:w="42" w:type="dxa"/><w:left w:w="55" w:type="dxa"/><w:right w:w="55" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${grid}</w:tblGrid>${out.join('')}</w:tbl>`;
+ return `<w:tbl><w:tblPr><w:tblW w:w="${width}" w:type="dxa"/><w:tblLayout w:type="fixed"/><w:tblBorders><w:top w:val="single" w:sz="5"/><w:left w:val="single" w:sz="5"/><w:bottom w:val="single" w:sz="5"/><w:right w:val="single" w:sz="5"/><w:insideH w:val="single" w:sz="5"/><w:insideV w:val="single" w:sz="5"/></w:tblBorders><w:tblCellMar><w:top w:w="24" w:type="dxa"/><w:bottom w:w="24" w:type="dxa"/><w:left w:w="55" w:type="dxa"/><w:right w:w="55" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${grid}</w:tblGrid>${out.join('')}</w:tbl>`;
 }
 function wordElement(el,context={}){
  if(el.nodeType===3){return el.textContent.trim()?wP(wR(el.textContent,{sz:context.or?15:18})):''}
@@ -1064,17 +1078,18 @@ async function exportWord(which='candidate'){
   const secs=[...wrapper.querySelectorAll(':scope > section.print-sheet')];
   if(!secs.length)throw new Error('Aucune page à exporter');
   const body=secs.map((el,i)=>`${i?wP('<w:r><w:br w:type="page"/></w:r>',{after:0}):''}${[...el.childNodes].map(n=>wordElement(n)).join('')}`).join('');
-  const sect='<w:sectPr><w:footerReference w:type="default" r:id="rIdFooter"/><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="690" w:right="800" w:bottom="1400" w:left="800" w:header="360" w:footer="360"/></w:sectPr>';
+  const sect='<w:sectPr><w:headerReference w:type="default" r:id="rIdHeader"/><w:footerReference w:type="default" r:id="rIdFooter"/><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="690" w:right="800" w:bottom="1400" w:left="800" w:header="360" w:footer="360"/></w:sectPr>';
   const doc=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"><w:body>${body}${sect}</w:body></w:document>`;
   const kind={candidate:'Sujet',evaluation:'Grille',centre:'Centre',materiel:'Matériel',all:'Dossier complet'}[which]||'Sujet';
   const zip=new JSZip();
-  const contentTypes=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Default Extension="jpeg" ContentType="image/jpeg"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/></Types>`;
+  const contentTypes=`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Default Extension="jpeg" ContentType="image/jpeg"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/word/header1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.header+xml"/><Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/></Types>`;
   zip.file('[Content_Types].xml',contentTypes);
   zip.file('_rels/.rels',`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>`);
   zip.file('word/document.xml',doc);
   zip.file('word/footer1.xml',wordFooter(kind));
+  zip.file('word/header1.xml','<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:hdr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'+wP(wR((data.meta.responsable||'Professeur responsable')+' — CAP Maintenance des véhicules',{sz:16}),{after:0,align:'center'})+'</w:hdr>');
   zip.file('word/styles.xml',`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial"/><w:sz w:val="18"/></w:rPr></w:rPrDefault></w:docDefaults><w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/><w:pPr><w:spacing w:after="75"/></w:pPr></w:style></w:styles>`);
-  const relations=[`<Relationship Id="rIdFooter" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml"/>`];
+  const relations=[`<Relationship Id="rIdHeader" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/header" Target="header1.xml"/>`,`<Relationship Id="rIdFooter" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml"/>`];
   for(const im of wordImages){zip.file(`word/media/image${im.id}.${im.ext}`,im.bytes);relations.push(`<Relationship Id="rIdImg${im.id}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/image${im.id}.${im.ext}"/>`)}
   zip.file('word/_rels/document.xml.rels',`<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${relations.join('')}</Relationships>`);
   const blob=await zip.generateAsync({type:'blob',compression:'DEFLATE',compressionOptions:{level:6}});
